@@ -1,0 +1,54 @@
+/* Layout */
+body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f9; }
+.dashboard-container { display: flex; min-height: 100vh; }
+.sidebar { width: 220px; background: #1e3c72; color: #fff; padding: 1rem; }
+.sidebar h2 { text-align: center; margin-bottom: 1rem; }
+.sidebar nav a {
+  display: block; padding: .75rem; color: #fff; text-decoration: none; border-radius: 8px;
+}
+.sidebar nav a:hover, .sidebar nav a.active { background: #2a5298; }
+.main { flex: 1; padding: 1rem 2rem; }
+
+/* Topbar */
+.topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.topbar h1 { margin: 0; color: #333; }
+.top-actions { display: flex; align-items: center; gap: 1rem; }
+.top-actions i { font-size: 1.2rem; cursor: pointer; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; }
+
+/* Stats */
+.stats { display: flex; gap: 1rem; margin-bottom: 2rem; }
+.stat-card { flex: 1; background: #fff; border-radius: 12px; padding: 1.5rem; text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1); }
+.stat-card h3 { margin: 0; font-size: 2rem; color: #1e3c72; }
+
+/* Applications */
+.applications { background: #fff; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,.1); margin-bottom: 2rem; }
+.applications h2 { margin-top: 0; }
+.applications table { width: 100%; border-collapse: collapse; }
+.applications th, .applications td { padding: .75rem; text-align: left; }
+.status { padding: .25rem .5rem; border-radius: 6px; font-size: .85rem; }
+.status.pending { background: #ffe082; }
+.status.shortlisted { background: #c8e6c9; }
+.status.rejected { background: #ffcdd2; }
+
+/* Events */
+.events, .my-events, .create-event {
+  background: #fff; padding: 1.5rem; border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,.1); margin-bottom: 2rem;
+}
+.event-cards { display: flex; gap: 1rem; }
+.event-card { flex: 1; background: #f9f9f9; padding: 1rem; border-radius: 10px; }
+.event-card h3 { margin-top: 0; color: #1e3c72; }
+.register-btn { background: #1e3c72; color: #fff; border: none; padding: .5rem 1rem; border-radius: 6px; cursor: pointer; }
+.register-btn:hover { background: #2a5298; }
+
+/* My Events */
+.my-events ul { margin: 0; padding-left: 1.2rem; }
+.my-events li { margin-bottom: .5rem; }
+
+/* Create Event */
+.create-event form { display: flex; flex-direction: column; gap: .75rem; }
+.create-event input, .create-event textarea { padding: .5rem; border: 1px solid #ccc; border-radius: 6px; }
+.create-event button { background: #ff9800; color: #fff; border: none; padding: .6rem; border-radius: 6px; cursor: pointer; }
+.create-event button:hover { background: #fb8c00; }

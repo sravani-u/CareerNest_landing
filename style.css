@@ -1,0 +1,161 @@
+/* === General Page Styles === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e3c72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* === Container === */
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+/* === Title === */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* === Card === */
+.form-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* === Headings === */
+.form-card h2 {
+    text-align: center;
+    color: #0d4d8b;
+    margin-bottom: 20px;
+}
+
+/* === Form Groups === */
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    height: 44px;                /* consistent height */
+    padding: 0 44px 0 12px;      /* leave space for icons on right */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* === Password Toggle Icon === */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .toggle-password {
+    position: absolute;
+    right: 12px;                 /* space from right edge */
+    top: 50%;                    /* vertical centering */
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+    line-height: 1;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+}
+
+.password-wrapper .toggle-password:hover {
+    color: #0f4c75;
+}
+
+/* === Remember Me & Forgot === */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+}
+
+.remember input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.forgot {
+    font-size: 0.9rem;
+    color: #0d4d8b;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* === Buttons === */
+.btn {
+    width: 100%;
+    background: #0d4d8b;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #093763;
+}
+
+/* === Switch Link === */
+.switch-link {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.switch-link a {
+    color: #0d4d8b;
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+}
+
+/* === Register Page Width Adjustment === */
+.register-page .container {
+    max-width: 550px; /* Wider for registration */
+}
+
+.register-page .form-card {
+    padding: 40px;
+}
+    

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarreerNest - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">CarrierNest</h1>
+        <div class="form-card">
+            <h2>Login</h2>
+            <form>
+                <div class="form-group">
+                    <label>Email or Username</label>
+                    <input type="text" placeholder="Enter email or username" required>
+                </div>
+                <div class="form-group password-wrapper">
+                    <label>Password</label>
+                    <input type="password" id="login-password" placeholder="Enter password" required>
+                    <i class="" data-target="login-password"></i>
+                </div>
+                <div class="form-options">
+                    <label class="remember" for="remember">
+                        <input type="checkbox" id="remember" />
+                        <span>Remember me</span>
+                    </label>
+                    <a class="forgot" href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <p class="switch-link">Don't have an account? <a href="register.html">Register</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>

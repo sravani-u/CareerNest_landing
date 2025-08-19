@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Nest - Student Dashboard</title>
+  <link rel="stylesheet" href="Student_Dashboard.css"/>
+  <script defer src="Student_Dashboard.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="dashboard-container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Career Nest</h2>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-user"></i> My Profile</a>
+        <a href="#"><i class="fas fa-briefcase"></i> Job Listings</a>
+        <a href="#"><i class="fas fa-paper-plane"></i> My Applications</a>
+        <a href="#"><i class="fas fa-bookmark"></i> Saved Jobs</a>
+        <a href="#"><i class="fas fa-bell"></i> Notifications</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> Events</a>
+        <a href="#"><i class="fas fa-headset"></i> Help & Support</a>
+        <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main">
+      
+      <!-- Topbar -->
+      <header class="topbar">
+        <h1>Welcome back, Priya 👋</h1>
+        <div class="top-actions">
+          <i class="fas fa-bell"></i>
+          <img src="https://i.pravatar.cc/40?img=1" class="avatar"/>
+        </div>
+      </header>
+
+      <!-- Stats -->
+      <section class="stats">
+        <div class="stat-card">
+          <h3>8</h3>
+          <p>Jobs Applied</p>
+        </div>
+        <div class="stat-card">
+          <h3>5</h3>
+          <p>Jobs Saved</p>
+        </div>
+        <div class="stat-card">
+          <h3>75%</h3>
+          <p>Profile Complete</p>
+        </div>
+      </section>
+
+      <!-- Recent Applications -->
+      <section class="applications">
+        <h2>Recent Applications</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Job Title</th>
+              <th>Company</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Frontend Developer</td>
+              <td>TechCorp</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>UI/UX Designer</td>
+              <td>Designify</td>
+              <td><span class="status shortlisted">Shortlisted</span></td>
+            </tr>
+            <tr>
+              <td>Backend Developer</td>
+              <td>CodeWorks</td>
+              <td><span class="status rejected">Rejected</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-cards">
+          <div class="event-card">
+            <h3>Hackathon 2025</h3>
+            <p>Date: Aug 30, 2025</p>
+            <p>Host: CodeWorks</p>
+            <button class="register-btn">Register</button>
+          </div>
+          <div class="event-card">
+            <h3>AI Workshop</h3>
+            <p>Date: Sep 05, 2025</p>
+            <p>Host: DataCorp</p>
+            <button class="register-btn">Register</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Events -->
+      <section class="my-events">
+        <h2>My Events</h2>
+        <ul>
+          <li>Resume Workshop – Registered ✅</li>
+          <li>Hackathon 2025 – Created (as Host)</li>
+        </ul>
+      </section>
+
+      <!-- Create Event -->
+      <section class="create-event">
+        <h2>Create New Event</h2>
+        <form id="eventForm">
+          <input type="text" placeholder="Event Title" required />
+          <input type="date" required />
+          <textarea placeholder="Description" required></textarea>
+          <button type="submit">Create Event</button>
+        </form>
+      </section>
+
+    </div>
+  </div>
+</body>
+</html>
